@@ -1,5 +1,5 @@
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np 
+import pandas as pd 
 import os,cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,8 +13,6 @@ from sklearn.model_selection import train_test_split
 import keras
 
 from keras.utils import np_utils
-# Input data files are available in the "../input/" directory.
-# For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
 from keras.models import Sequential
 from keras.layers import Dense , Activation , Dropout ,Flatten
 from keras.layers.convolutional import Conv2D
@@ -28,9 +26,6 @@ from tensorflow.keras.layers import (
 )
 import os
 print(os.listdir("CK+48"))
-
-
-# Any results you write to the current directory are saved as output
 
 from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.model_selection import cross_val_score, cross_val_predict
